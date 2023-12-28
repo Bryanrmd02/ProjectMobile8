@@ -5,22 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class MainActivity : AppCompatActivity() {
+class ProdukRekomendasi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_produk_rekomendasi)
     }
 
-    fun halLogin(view: View) {
+    fun kembali(view: View) {
         // Memulai aktivitas tujuan
-        val intent = Intent(this@MainActivity, LoginActivity::class.java)
+        val intent = Intent(this@ProdukRekomendasi, RekomMakananUmur::class.java)
         startActivity(intent)
     }
 
-    fun halRegister(view: View) {
+    fun halResepMakanan(view: View) {
         // Memulai aktivitas tujuan
-        val intent = Intent(this@MainActivity, RegisterActivity::class.java)
+        val intent = Intent(this@ProdukRekomendasi, ResepMakanan::class.java)
         startActivity(intent)
     }
-
 }

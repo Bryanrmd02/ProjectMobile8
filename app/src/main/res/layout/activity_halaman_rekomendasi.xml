@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".HalamanRekomendasi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/biru">
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:onClick="kembali"
+                        android:src="@drawable/ic_back"
+                        app:tint="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/welcome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Selamat Datang"
+                        android:textSize="26sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toEndOf="@id/btnBack"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/namaUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User!"
+                    android:layout_below="@id/linlayout"
+                    android:textSize="30sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="43dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/icUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_user"
+                    android:scaleX="3"
+                    android:scaleY="3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    app:tint="@color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/umur"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="UMUR"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@drawable/keterangan"
+            android:layout_below="@id/linearlayout"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/umur"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp">
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:background="@drawable/relative_layout"
+                android:onClick="halProdukRekomendasi"/>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:background="@drawable/relative_layout"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:background="@drawable/relative_layout"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:background="@drawable/relative_layout"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:background="@drawable/relative_layout"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
